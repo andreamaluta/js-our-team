@@ -56,16 +56,18 @@ const createCard = (member) =>{
                 </div>
             </div>`;
 
-  document.getElementById('cardContainer').innerHTML += card;
+  return card;
+  // document.getElementById('cardContainer').innerHTML += card;
   
 }
 
 const updContainer = (array) =>{
-  
+  for(let i=0; i<array.length; i++){
+    let createdCard = createCard(array[i]);
+    document.getElementById('cardContainer').innerHTML += createdCard;
+  }
 }
 
+updContainer(teamMembers);
 
-for(let i=0; i<teamMembers.length; i++){
-  console.log(teamMembers[i]);
-  createCard(teamMembers[i]);
-}
+

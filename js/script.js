@@ -36,3 +36,10 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+
+for(let i=0; i<teamMembers.length; i++){
+  console.log(teamMembers[i]);
+  createCard(teamMembers[i]);
+}

@@ -60,6 +60,11 @@ const createCard = (member) =>{
   
 }
 
+const updContainer = (array) =>{
+  
+}
+
+
 for(let i=0; i<teamMembers.length; i++){
   console.log(teamMembers[i]);
   createCard(teamMembers[i]);

@@ -47,7 +47,7 @@ const createCard = (member) =>{
                     <div class="col-4">
                         <img src="./${img}" alt="" class="img-fluid">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 d-flex flex-column justify-content-around">
                         <h4>${name}</h4>
                         <p>${role}</p>
                         <a href="#" class="text-decoration-none">${email}</a>

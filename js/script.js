@@ -37,7 +37,28 @@ const teamMembers = [
   }
 ];
 
+const createCard = (member) =>{
+  
+  const {name, role, email, img} = member;
 
+  let card = `<div class="col-4 mb-3">
+                <div class="card">
+                   <div class="row">
+                    <div class="col-4">
+                        <img src="./${img}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <h4>${name}</h4>
+                        <p>${role}</p>
+                        <a href="#" class="text-decoration-none">${email}</a>
+                    </div>
+                   </div> 
+                </div>
+            </div>`;
+
+  document.getElementById('cardContainer').innerHTML += card;
+  
+}
 
 for(let i=0; i<teamMembers.length; i++){
   console.log(teamMembers[i]);
